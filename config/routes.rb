@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   # Dasboard
   get "/dasboard" => "accounts#index"
+  get "profile/:username" => "accounts#profile", as: :profile
 
   resources :posts, only: [:new,:create,:show]
 
