@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_30_134100) do
+ActiveRecord::Schema.define(version: 2021_11_29_142953) do
 
   create_table "accounts", charset: "utf8mb4", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -38,10 +38,10 @@ ActiveRecord::Schema.define(version: 2021_11_30_134100) do
   create_table "posts", charset: "utf8mb4", force: :cascade do |t|
     t.string "image"
     t.boolean "active"
+    t.text "description"
     t.bigint "account_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.text "description"
     t.index ["account_id"], name: "index_posts_on_account_id"
   end
 
