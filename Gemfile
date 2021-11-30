@@ -28,6 +28,7 @@ gem 'devise'
 
 gem 'carrierwave', '~> 2.0'
 
+gem "font-awesome-rails"
 gem 'mini_magick', '~> 4.11'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
