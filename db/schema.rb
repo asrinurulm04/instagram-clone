@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(version: 2021_11_30_143107) do
     t.string "image"
     t.boolean "active"
     t.text "description"
+    t.integer "total_likes_count"
+    t.integer "total_comments_count"
     t.bigint "account_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
